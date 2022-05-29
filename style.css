@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 * {
-    margin: 0;
+    margin: 3;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,5 +12,15 @@ html {
 
 body {
     background-color: black;
+    color: aqua;
     font-family: 'Inconsolata';
+}
+
+h2 {
+    color: whitesmoke;
+    font-size: 3rem;
+}
+
+p{
+    font-size: 2rem;
 }
