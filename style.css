@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
 * {
     margin: 2rem;
     padding: 0;
@@ -12,19 +14,25 @@ html {
 
 body {
     background-color: black;
-    color: aqua;
+    color: cyan;
     font-family: 'Inconsolata';
 }
 
 h2 {
     color: whitesmoke;
+    font-family: 'Montserrat';
     font-size: 3rem;
     margin-left: 20%;
     margin-right: 20%;
 }
 
+figure{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 a{
-    color: whitesmoke;
+    color:whitesmoke;
     text-decoration: none;
 }
 
