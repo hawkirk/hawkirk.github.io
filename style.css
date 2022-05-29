@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 * {
-    margin: 3;
+    margin: 2rem;
     padding: 0;
     box-sizing: border-box;
 }
@@ -19,8 +19,17 @@ body {
 h2 {
     color: whitesmoke;
     font-size: 3rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 p{
     font-size: 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
 }
