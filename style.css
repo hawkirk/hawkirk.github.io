@@ -2,37 +2,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
-* {
-    margin: 2rem;
-    padding: 0;
-    box-sizing: border-box;
+.container
+{
+    margin: 150px auto;
+    width: 50%;
+    padding: 8px;
 }
 
+img
+{
+    float: left;
+    width: 250px;
+    height: 250px;
+    padding: 0 10px 0 0;
+}
+
+
 html {
-    font-size: 10px;
+    font-size: 20px;
 }
 
 body {
-    background-color: black;
-    color: cyan;
+    background-color: #28282B;
+    color: #40FFFF;
     font-family: 'Inconsolata';
 }
 
 h2 {
     color: whitesmoke;
     font-family: 'Inconsolata';
-    font-size: 4rem;
-    margin-left: 20%;
-    margin-right: 20%;
+    font-size: 50px;
 }
 
 a{
-    color:whitesmoke;
+    color: whitesmoke;
     text-decoration: none;
+    font-weight: bold;
 }
 
-p{
-    font-size: 2rem;
-    margin-left: 20%;
-    margin-right: 20%;
+.img{
+    float: 'left';
 }
