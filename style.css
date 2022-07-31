@@ -33,6 +33,11 @@ body {
   margin: 0 auto;  /* centers the layout */
 }
 
+#profile_pic {
+  float: right;
+  margin: 0 0 0 15px;
+}
+
 /* ------- Sections ------- */
 
 section {
