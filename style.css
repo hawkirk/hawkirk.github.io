@@ -16,9 +16,15 @@
   }
 }
 
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 body {
   font-size: 18px;
-  font-family: system-ui, sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.4;
   color: var(--textcolor);
   background: var(--bgcolor);
