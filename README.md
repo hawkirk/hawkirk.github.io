@@ -2,9 +2,9 @@
 
 https://hawkirk.com/
 
-Personal website to host CV, information about me, and future professional and creative projects.
+Personal website to host CV, blog, and projects.
 
-Uses `HTML` and `CSS`.
+Uses `HTML` and `CSS`. Forked from [cadars](https://github.com/cadars/john-doe).
 
 ## License
 
