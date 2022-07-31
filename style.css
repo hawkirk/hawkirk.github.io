@@ -8,13 +8,13 @@
 
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   * {
     --textcolor: #dadada;
     --bgcolor: #141414;
     --highlight: #ffc400;
   }
-}
+} */
 
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
