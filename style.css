@@ -168,6 +168,12 @@ blockquote:before {
   opacity: .2;
 }
 
+.responsive {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
 img, svg, video, audio {
   display: block;
   max-width: 100%;
