@@ -269,20 +269,6 @@ section:target iframe {
   visibility: visible;
 }
 
-/* External links */
-
-a[href*="//"]:after { 
-  font-weight: 300;
-  font-size: .85em;
-  content: "\2197"; /* top right arrow: â†— */
-  color: var(--textcolor);
-  opacity: .25;
-}
-
-a[href*="//"]:hover:after {
-  color: var(--highlight);
-  opacity: 1;
-}
 
 /* File links */
 
@@ -294,7 +280,6 @@ a:before {
 /* Add more filetypes here if you want */
 
 a[href$=".pdf"]:before { content: "PDF"; }
-a[href$=".txt"]:before { content: "TXT"; }
 a[href$=".mp3"]:before { content: "MP3"; }
 a[href$=".zip"]:before { content: "ZIP"; }
 a[href$=".rar"]:before { content: "RAR"; }
@@ -453,7 +438,7 @@ article time {
 /* ------- Smaller screens ------- */
 
 @media only screen and (max-width: 680px) {
-  body { font-size: 16px; }
+  body { font-size: 12px; }
 }
 
 @media only screen and (max-width: 540px) {
