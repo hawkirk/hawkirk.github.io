@@ -3,7 +3,7 @@
   /* Color scheme */
   
   --textcolor: #121212;
-  --bgcolor: #FFFFFF;
+  --bgcolor: #F5F3F0;
   --highlight: #3F704D;
 
 }
@@ -77,6 +77,12 @@ nav a:not(:last-of-type) {
 }
 
 /* ------- General ------- */
+
+img{
+  border-radius: 10%;
+  float: right;
+  padding: 20px
+}
 
 a {
   text-decoration: none;
