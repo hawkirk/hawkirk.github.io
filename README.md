@@ -8,4 +8,4 @@ Uses `HTML` and `CSS`, hosted on GitHub Pages. Styling modified from [cadars](ht
 
 ## License
 
-[MIT](docs/LICENSE.txt)
+[MIT](LICENSE)
