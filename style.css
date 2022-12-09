@@ -1,7 +1,10 @@
-* { margin: 0; padding: 0; box-sizing: border-box;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
   /* Color scheme */
-  
+
   --textcolor: #121212;
   --bgcolor: #F5F3F0;
   --highlight: #3F704D;
@@ -17,9 +20,15 @@
 } */
 
 @import url('https://rsms.me/inter/inter.css');
-html { font-family: 'Inter', sans-serif; }
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
 }
 
 body {
@@ -29,8 +38,10 @@ body {
   color: var(--textcolor);
   background: var(--bgcolor);
   position: relative;
-  max-width: 64em;  /* remove this for a full-width layout */
-  margin: 0 auto;  /* centers the layout */
+  max-width: 64em;
+  /* remove this for a full-width layout */
+  margin: 0 auto;
+  /* centers the layout */
 }
 
 /* ------- Sections ------- */
@@ -46,11 +57,13 @@ section {
   background: var(--bgcolor);
 }
 
-section:target { /* Show section */
+section:target {
+  /* Show section */
   display: block;
 }
 
-section#home { /* Show #home by default */
+section#home {
+  /* Show #home by default */
   display: block;
 }
 
@@ -67,7 +80,8 @@ header {
 
 header h1 {
   font-size: 1.5em;
-  flex: 1; /* pushes nav to the right */
+  flex: 1;
+  /* pushes nav to the right */
   white-space: nowrap;
   padding: 0 5vw .5em 0;
 }
@@ -78,7 +92,7 @@ nav a:not(:last-of-type) {
 
 /* ------- General ------- */
 
-img{
+img {
   border-radius: 10%;
   float: right;
   padding: 20px
@@ -98,14 +112,20 @@ section h1 {
   margin: 0 0 1em 0;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-size: 1em;
   font-weight: 600;
   margin: 1.6em 0 .6em 0;
 }
 
-p, ul, ol, article {
-  max-width: 60ch; /* Limit line-length to 60 characters */
+p,
+ul,
+ol,
+article {
+  max-width: 60ch;
+  /* Limit line-length to 60 characters */
   margin-bottom: .6em;
 }
 
@@ -121,11 +141,13 @@ li {
   margin-bottom: .2em;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 2ch;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 600;
 }
 
@@ -159,7 +181,7 @@ blockquote {
 
 blockquote:before {
   content: "";
-  position:absolute;
+  position: absolute;
   left: 0;
   top: .3em;
   bottom: .3em;
@@ -174,37 +196,43 @@ blockquote:before {
   height: auto;
 }
 
-img, svg, video, audio {
+img,
+svg,
+video,
+audio {
   display: block;
   max-width: 100%;
   height: auto;
   fill: currentColor;
 }
-  
-code, textarea {
+
+code,
+textarea {
   font-family: ui-monospace, SF Mono, Menlo, Monaco, Andale Mono, monospace;
   font-size: 1em;
   opacity: .7;
 }
 
 a code {
-  opacity:1;
+  opacity: 1;
 }
 
-pre, textarea { /* for code samples */
+pre,
+textarea {
+  /* for code samples */
   font-size: .9em;
   color: inherit;
-  line-height:inherit;
-  padding:.6em .9em;
+  line-height: inherit;
+  padding: .6em .9em;
   margin: .8em 0 1em 0;
   position: relative;
   display: block;
   width: 100%;
   white-space: pre;
-  border:0;
+  border: 0;
   border-radius: 4px;
-  background:rgba(255,255,100,.075);
-  box-shadow: inset 1px 1px 0 rgba(0,0,0,.2), inset -1px -1px 0 rgba(0,0,0,.04) ;
+  background: rgba(255, 255, 100, .075);
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .2), inset -1px -1px 0 rgba(0, 0, 0, .04);
 }
 
 /* Inline footnotes */
@@ -221,17 +249,23 @@ label:hover {
   color: var(--highlight);
 }
 
-label:before {content:"[";}
-label:after {content:"]";}
+label:before {
+  content: "[";
+}
 
-label + input,
-label + input + small {
+label:after {
+  content: "]";
+}
+
+label+input,
+label+input+small {
   display: none;
 }
 
-input:checked + small {
+input:checked+small {
   display: block;
-  padding: .8em 0 1em 2.5vw;;
+  padding: .8em 0 1em 2.5vw;
+  ;
 }
 
 /* Figures */
@@ -250,19 +284,23 @@ figure figcaption {
 
 figure.video {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;
+  /* 16:9 */
   height: 0;
   overflow: hidden;
 }
 
-figure.video iframe, figure.video object, figure.video embed {
+figure.video iframe,
+figure.video object,
+figure.video embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border: 0;
-  visibility: hidden; /* so loading="lazy" should work? */
+  visibility: hidden;
+  /* so loading="lazy" should work? */
 }
 
 section:target iframe {
@@ -272,25 +310,39 @@ section:target iframe {
 
 /* File links */
 
-a:before { 
+a:before {
   font-size: .7em;
   margin-right: .4em;
 }
 
 /* Add more filetypes here if you want */
 
-a[href$=".pdf"]:before { content: "PDF"; }
-a[href$=".mp3"]:before { content: "MP3"; }
-a[href$=".zip"]:before { content: "ZIP"; }
-a[href$=".rar"]:before { content: "RAR"; }
+a[href$=".pdf"]:before {
+  content: "PDF";
+}
+
+a[href$=".mp3"]:before {
+  content: "MP3";
+}
+
+a[href$=".zip"]:before {
+  content: "ZIP";
+}
+
+a[href$=".rar"]:before {
+  content: "RAR";
+}
+
 a[href$=".jpeg"]:before,
 a[href$=".jpg"]:before,
 a[href$=".gif"]:before,
-a[href$=".png"]:before { content: "IMG"; }
+a[href$=".png"]:before {
+  content: "IMG";
+}
 
 /* ------- News ------- */
 
-article + article {
+article+article {
   margin-top: 4.5em;
 }
 
@@ -311,7 +363,8 @@ article time {
 .grid {
   display: grid;
   grid-gap: 5vmin;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 150px = minimum image size */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  /* 150px = minimum image size */
   grid-auto-flow: dense;
   padding: 2em 0;
 }
@@ -363,7 +416,8 @@ article time {
 }
 
 .slides figure img {
-  max-height: 88vh; /* Adjust if needed */
+  max-height: 88vh;
+  /* Adjust if needed */
 }
 
 .slides figure.cover {
@@ -405,8 +459,9 @@ article time {
   z-index: 4;
 }
 
-.lightbox:target:before { /* Loading spinner */
-  content:"";
+.lightbox:target:before {
+  /* Loading spinner */
+  content: "";
   height: 2em;
   width: 2em;
   animation: spin .8s infinite linear;
@@ -420,11 +475,17 @@ article time {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.lightbox:target:after { /* Ã— to close */
+.lightbox:target:after {
+  /* Ã— to close */
   content: "\00D7";
   position: fixed;
   font-size: 2em;
@@ -438,39 +499,60 @@ article time {
 /* ------- Smaller screens ------- */
 
 @media only screen and (max-width: 680px) {
-  body { font-size: 12px; }
+  body {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 540px) {
-  nav { width: 100%; } /* Fix for older webkit versions */
+  nav {
+    width: 100%;
+  }
+
+  /* Fix for older webkit versions */
 }
 
 /* ------- Print ------- */
 
 @media print {
-  
-  nav, .lightbox:target:after { display: none; }
-  
-  article, figure, img {
+
+  nav,
+  .lightbox:target:after {
+    display: none;
+  }
+
+  article,
+  figure,
+  img {
     page-break-inside: avoid;
     break-inside: avoid;
   }
-  
+
   /* Inline footnotes */
-  
-  label + input + small { display: inline; }
-  label + input + small:before { content: "["; }
-  label + input + small:after { content: "]"; }
-  
+
+  label+input+small {
+    display: inline;
+  }
+
+  label+input+small:before {
+    content: "[";
+  }
+
+  label+input+small:after {
+    content: "]";
+  }
+
   /* Slides */
-  
-  .slides, .slides figure {
+
+  .slides,
+  .slides figure {
     position: relative;
     height: auto;
     padding: 0;
   }
 
-  .slides figure img, .slides figure.cover img {
+  .slides figure img,
+  .slides figure.cover img {
     max-height: auto;
     position: relative;
     z-index: 1;
@@ -478,5 +560,5 @@ article time {
     height: 100vh;
     object-fit: contain;
   }
-    
+
 }
