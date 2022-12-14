@@ -1,13 +1,13 @@
 <!-- https://github.com/hawkirk/hawkirk.github.io -->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 
   <title>harrison</title>
   <meta name="description" content="Site description">
@@ -17,9 +17,6 @@
   <meta property="og:description" content="Site description">
   <meta property="og:image" content="img/site-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
-
-  <!-- You could also inline the stylesheet -->
-  <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -32,6 +29,7 @@
     <nav>
       <a href="https://hawkirk.com/cv">cv</a>
       <a href="#data">data</a>
+      <i class="fa fa-lightbulb" id="toggleDark"></i>
     </nav>
   </header>
 
@@ -89,6 +87,17 @@
     </section>
 
   </main>
+
+  <script>
+
+    var toggleDark = document.getElementById("toggleDark");
+
+    toggleDark.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+    }
+
+  </script>
+
 </body>
 
 </html>
