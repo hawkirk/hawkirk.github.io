@@ -11,18 +11,10 @@
 }
 
 .dark-theme {
-  --textcolor: #dadada;
-  --bgcolor: #161616;
-  --highlight: #79fff4;
+  --textcolor: #dcddde;
+  --bgcolor: #202020;
+  --highlight: #6BE0EF;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  * {
-    --textcolor: #dadada;
-    --bgcolor: #141414;
-    --highlight: #ffc400;
-  }
-} */
 
 @import url('https://rsms.me/inter/inter.css');
 
