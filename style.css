@@ -193,6 +193,27 @@ blockquote:before {
   opacity: .2;
 }
 
+button#toggleDark {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 1.5vw;
+  /* Add left margin for spacing */
+  font-size: 1em;
+}
+
+button#toggleDark:focus {
+  outline: none;
+}
+
+button#toggleDark i {
+  color: var(--highlight);
+}
+
 .responsive {
   width: 100%;
   max-width: 300px;

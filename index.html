@@ -9,11 +9,11 @@
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 
-  <title>harrison</title>
+  <title>Harrison</title>
   <meta name="description" content="Site description">
 
   <!-- Recommended minimum -->
-  <meta property="og:title" content="harrison">
+  <meta property="og:title" content="Harrison">
   <meta property="og:description" content="Site description">
   <meta property="og:image" content="img/site-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
@@ -29,7 +29,9 @@
     <nav>
       <a href="https://hawkirk.com/cv">cv</a>
       <a href="#data">data</a>
-      <i class="fa fa-lightbulb" id="toggleDark"></i>
+      <button id="toggleDark" onclick="toggleDark()">
+        <i id="theme-icon" class="fas fa-moon"></i>
+      </button>
     </nav>
   </header>
 
@@ -38,9 +40,11 @@
     <section id="home">
       <!-- HOME -->
 
-      <p>Hello! My name is <strong>harrison kirk</strong>.</p>
+      <p>Hello! My name is <strong>Harrison Kirk</strong>.</p>
 
       <p>I'm a data analyst interested in the intersection of technology and public policy.</p>
+
+      <p>I currently work for <a href="https://www.mathematica.org/">Mathematica</a> on the Health team.</p>
 
       <p>I've worked previously for <a href="https://www.edanalytics.org/">Education Analytics</a>,
         the <a href="https://www.slocounty.ca.gov/Departments/Health-Agency/Behavioral-Health.aspx">County of San Luis
@@ -89,11 +93,18 @@
   </main>
 
   <script>
+    function toggleDark() {
+      const body = document.body;
+      const themeIcon = document.getElementById("theme-icon");
+      body.classList.toggle("dark-theme");
 
-    var toggleDark = document.getElementById("toggleDark");
-
-    toggleDark.onclick = function () {
-      document.body.classList.toggle("dark-theme");
+      if (body.classList.contains("dark-theme")) {
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+      } else {
+        themeIcon.classList.remove("fa-sun");
+        themeIcon.classList.add("fa-moon");
+      }
     }
 
   </script>
