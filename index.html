@@ -10,11 +10,12 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
 
   <title>Harrison Kirk</title>
-  <meta name="description" content="Site description">
+  <meta name="description"
+    content="Hello! My name is Harrison Kirk. I'm interested in the intersection of data, technology, and policy.">
 
-  <!-- Recommended minimum -->
-  <meta property="og:title" content="Harrison">
-  <meta property="og:description" content="Site description">
+  <meta property="og:title" content="Harrison Kirk">
+  <meta property="og:description"
+    content="Hello! My name is Harrison Kirk. I'm interested in the intersection of data, technology, and policy.">
   <meta property="og:image" content="img/site-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -24,12 +25,11 @@
 
   <header>
     <h1>
-      <a href="#home">home</a>
+      <a href="#home">Harrison Kirk</a>
     </h1>
     <nav>
-      <a href="https://hawkirk.com/cv">cv</a>
-      <a href="#data">data</a>
-      <button id="toggleDark" onclick="toggleDark()">
+      <a href="#about">About</a>
+      <button id="toggleDark" onclick="toggleDark()" aria-label="Toggle dark mode">
         <i id="theme-icon" class="fas fa-moon"></i>
       </button>
     </nav>
@@ -38,32 +38,76 @@
   <main>
 
     <section id="home">
-      <!-- HOME -->
 
-      <p>Hello! My name is <strong>Harrison Kirk</strong>.</p>
+      <p>
+        Welcome! Thanks for stopping by.
+      </p>
 
-      <p>I'm a data analyst interested in the intersection of technology and public policy.</p>
+      <h3>
+        <i class="fa fa-satellite"></i> Links
+      </h3>
 
-      <p>I currently work for <a href="https://www.mathematica.org/">Mathematica</a> on the Health team.</p>
+      <ul>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#words">Words</a></li>
+        <li><a href="https://hawkirk.com/cv">Resume</a></li>
+      </ul>
 
-      <p>I've worked previously for <a href="https://www.edanalytics.org/">Education Analytics</a>,
-        the <a href="https://www.slocounty.ca.gov/Departments/Health-Agency/Behavioral-Health.aspx">County of San Luis
-          Obispo Behavioral Health Department</a>,
-        and <a href="https://mustangnews.net/">Mustang News</a>.</p>
+      <hr>
 
-      <p>Check out my <a href="https://hawkirk.com/cv/">resume</a> or my <a href="#data">data portfolio</a>
-        for more on my skills and experience.</p>
+      <h3>
+        <i class="fa fa-envelope"></i> Get in touch
+      </h3>
 
-      <br>
+      <p>
+        Please don't hesitate to reach out via
+        <a href="mailto:harrison@hawkirk.com">email</a>,
+        <a href="https://github.com/hawkirk">GitHub</a>,
+        <a href="https://www.linkedin.com/in/hawkirk/">LinkedIn</a>,
+        or <a href="https://twitter.com/hrrsnkrk">Twitter</a>.
+      </p>
 
-      <p><a href="mailto:harrison@hawkirk.com"><strong>get in touch</strong></a></p>
+    </section>
+
+    <section id="about">
+
+      <h3><i class="fa fa-address-card"></i> About Me</h3>
+
+      <p>
+        Hello! My name is Harrison Kirk.
+      </p>
+
+      <p>
+        I'm interested in the intersection of data, technology, and policy.
+      </p>
+
+      <p>
+        I currently work on the Health team at
+        <a href="https://www.mathematica.org/">Mathematica</a>
+        as a Data Analytics Developer, based in Los Angeles.
+      </p>
+
+      <p>
+        My other interests include software engineering, urbanism, minimalism,
+        <a href="https://harmreduction.org/about-us/principles-of-harm-reduction/">
+          harm reduction</a>, <a href="#words">writing</a>, filmmaking,
+        music production, traveling, hiking, and of course, hanging out
+        with my dog, Wren.
+      </p>
+
+      <p>
+        Check out my <a href="https://hawkirk.com/cv/">resume</a>,
+        <a href="#data">data portfolio</a>, or <a href=#words>writing</a>
+        for more on my experience and interests.
+      </p>
 
     </section>
 
     <section id="data">
-      <!-- DATA -->
 
-      <p>A space for data science and engineering projects.</p>
+      <p>
+        A space for data science and engineering projects.
+      </p>
 
       <br>
 
@@ -81,14 +125,21 @@
           PostgresSQL, AWS, Docker, and Airflow.</p>
       </article>
 
-    </section>=
+    </section>
 
-    <section id="super_secret">
+    <section id="words">
 
-      <p>You've done it—you've found this highly mysterious, secret page. I have nothing to offer but my sincere
-        congratulations.</p>
+      <p>
+        A space for words.
+      </p>
 
     </section>
+
+    <footer>
+      <p>
+        © 2023 Harrison Kirk
+      </p>
+    </footer>
 
   </main>
 

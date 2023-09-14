@@ -5,15 +5,15 @@
 }
 
 :root {
-  --textcolor: #121212;
-  --bgcolor: #F5F3F0;
-  --highlight: #3F704D;
+  --textcolor: #100F0F;
+  --bgcolor: #FFFCF0;
+  --highlight: #6F6E69;
 }
 
 .dark-theme {
-  --textcolor: #dcddde;
-  --bgcolor: #202020;
-  --highlight: #6BE0EF;
+  --textcolor: #CECDC3;
+  --bgcolor: #100F0F;
+  --highlight: #878580;
 }
 
 @import url('https://rsms.me/inter/inter.css');
@@ -28,6 +28,8 @@ html {
   }
 }
 
+/* ------- Body ------- */
+
 body {
   font-size: 18px;
   font-family: 'Inter', sans-serif;
@@ -36,16 +38,13 @@ body {
   background: var(--bgcolor);
   position: relative;
   max-width: 64em;
-  /* remove this for a full-width layout */
   margin: 0 auto;
-  /* centers the layout */
 }
 
 /* ------- Sections ------- */
 
 section {
-  padding: calc(6em + 5vw) 5vw 8vw 5vw;
-  /* ! Everything below is needed ! */
+  padding: calc(5em + 5vw) 5vw 8vw 5vw;
   display: none;
   position: absolute;
   top: 0;
@@ -69,15 +68,14 @@ section#home {
 header {
   padding: 5vw 5vw 0 5vw;
   display: flex;
-  flex-wrap: wrap;
   position: absolute;
   width: 100%;
   z-index: 2;
 }
 
 header h1 {
-  font-size: 1.5em;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 400;
   flex: 1;
   /* pushes nav to the right */
   white-space: nowrap;
@@ -102,7 +100,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 1px solid;
+  color: #147d82;
 }
 
 section h1 {
@@ -111,7 +109,13 @@ section h1 {
 }
 
 h2,
-h3,
+h3 {
+
+  font-size: 1em;
+  font-weight: 500;
+  margin: 1.6em 0 .6em 0;
+}
+
 h4 {
   font-size: 1em;
   font-weight: 600;
@@ -304,34 +308,6 @@ figure figcaption {
   opacity: .7;
 }
 
-/* Responsive video embeds */
-
-figure.video {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  height: 0;
-  overflow: hidden;
-}
-
-figure.video iframe,
-figure.video object,
-figure.video embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  visibility: hidden;
-  /* so loading="lazy" should work? */
-}
-
-section:target iframe {
-  visibility: visible;
-}
-
-
 /* File links */
 
 a:before {
@@ -364,7 +340,7 @@ a[href$=".png"]:before {
   content: "IMG";
 }
 
-/* ------- News ------- */
+/* ------- Articles ------- */
 
 article+article {
   margin-top: 4.5em;
@@ -382,147 +358,9 @@ article time {
   opacity: .7;
 }
 
-/* ------- Images Grid ------- */
-
-.grid {
-  display: grid;
-  grid-gap: 5vmin;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  /* 150px = minimum image size */
-  grid-auto-flow: dense;
-  padding: 2em 0;
-}
-
-.grid a {
-  position: relative;
-  border: 0;
-}
-
-.grid a:hover {
-  transform: scale(.975);
-}
-
-/* For a square ratio */
-.grid a:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-}
-
-.grid a img {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-/* ------- Slideshow ------- */
-
-.slides {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.slides figure {
-  height: 100vh;
-  padding: 0 5vw;
-  margin: 0;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  scroll-snap-align: center;
-}
-
-.slides figure img {
-  max-height: 88vh;
-  /* Adjust if needed */
-}
-
-.slides figure.cover {
-  padding: 0;
-}
-
-.slides figure.cover img {
-  max-height: none;
-  position: absolute;
-  z-index: -1;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-}
-
-/* ------- Lightbox ------- */
-
-.lightbox {
-  display: none;
-  color: var(--textcolor);
-}
-
-.lightbox:target {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  background: var(--bgcolor);
-  border: 0;
-  z-index: 3;
-}
-
-.lightbox img {
-  max-height: 100vh;
-  z-index: 4;
-}
-
-.lightbox:target:before {
-  /* Loading spinner */
-  content: "";
-  height: 2em;
-  width: 2em;
-  animation: spin .8s infinite linear;
-  border: 1px solid;
-  border-right-color: transparent;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  transform: translateX(-50%);
-  opacity: .25;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.lightbox:target:after {
-  /* Ã— to close */
-  content: "\00D7";
-  position: fixed;
-  font-size: 2em;
-  font-weight: 200;
-  line-height: 0;
-  top: .75em;
-  right: .5em;
-  z-index: 4;
-}
-
 /* ------- Smaller screens ------- */
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 860px) {
   body {
     font-size: 12px;
   }
@@ -532,57 +370,4 @@ article time {
   nav {
     width: 100%;
   }
-
-  /* Fix for older webkit versions */
-}
-
-/* ------- Print ------- */
-
-@media print {
-
-  nav,
-  .lightbox:target:after {
-    display: none;
-  }
-
-  article,
-  figure,
-  img {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
-
-  /* Inline footnotes */
-
-  label+input+small {
-    display: inline;
-  }
-
-  label+input+small:before {
-    content: "[";
-  }
-
-  label+input+small:after {
-    content: "]";
-  }
-
-  /* Slides */
-
-  .slides,
-  .slides figure {
-    position: relative;
-    height: auto;
-    padding: 0;
-  }
-
-  .slides figure img,
-  .slides figure.cover img {
-    max-height: auto;
-    position: relative;
-    z-index: 1;
-    width: auto;
-    height: 100vh;
-    object-fit: contain;
-  }
-
 }
