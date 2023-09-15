@@ -29,7 +29,7 @@
     </h1>
     <nav>
       <a href="#about">About</a>
-      <button id="toggleDark" onclick="toggleDark()" aria-label="Toggle dark mode">
+      <button id="toggleTheme" onclick="toggleTheme()" aria-label="Toggle light/dark mode">
         <i id="theme-icon" class="fas fa-moon"></i>
       </button>
     </nav>
@@ -144,10 +144,28 @@
   </main>
 
   <script>
-    function toggleDark() {
+
+    document.addEventListener("DOMContentLoaded", function () {
       const body = document.body;
       const themeIcon = document.getElementById("theme-icon");
+
+      // Detect system preference and set initial theme
+      if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        body.classList.add("dark-theme");
+        themeIcon.classList.remove("fa-moon");
+        themeIcon.classList.add("fa-sun");
+      } else {
+        body.classList.add("light-theme");
+        themeIcon.classList.add("fa-moon");
+      }
+    });
+
+    function toggleTheme() {
+      const body = document.body;
+      const themeIcon = document.getElementById("theme-icon");
+
       body.classList.toggle("dark-theme");
+      body.classList.toggle("light-theme");
 
       if (body.classList.contains("dark-theme")) {
         themeIcon.classList.remove("fa-moon");

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-:root {
+.light-theme {
   --textcolor: #100F0F;
   --bgcolor: #F5F3F0;
   --highlight: #6F6E69;
@@ -153,7 +153,7 @@ strong {
   font-weight: 600;
 }
 
-#toggleDark {
+#toggleTheme {
   cursor: pointer;
   padding-left: 1rem;
 }
@@ -197,7 +197,7 @@ blockquote:before {
   opacity: .2;
 }
 
-button#toggleDark {
+button#toggleTheme {
   border: none;
   background-color: transparent;
   padding: 0;
@@ -210,11 +210,11 @@ button#toggleDark {
   font-size: 1em;
 }
 
-button#toggleDark:focus {
+button#toggleTheme:focus {
   outline: none;
 }
 
-button#toggleDark i {
+button#toggleTheme i {
   color: var(--highlight);
 }
 
