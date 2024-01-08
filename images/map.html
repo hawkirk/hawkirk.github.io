@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ad8ba177195cb1cf8f925c0d569bbd2a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ad8ba177195cb1cf8f925c0d569bbd2a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ad8ba177195cb1cf8f925c0d569bbd2a = L.map(
+                "map_ad8ba177195cb1cf8f925c0d569bbd2a",
+                {
+                    center: [37.31147016, -35.93802615999999],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_001f34f6414a75fe6e9c140c9be025d6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_001f34f6414a75fe6e9c140c9be025d6.addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            var marker_13f4224698f0f05b5609c07c3911733a = L.marker(
+                [43.072659, -89.387298],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_13f4224698f0f05b5609c07c3911733a.bindTooltip(
+                `<div>
+                     Corner where we first met <3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9698fcffea9d45138f866d9cd7842a3d = L.marker(
+                [43.076649, -89.391354],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_9698fcffea9d45138f866d9cd7842a3d.bindTooltip(
+                `<div>
+                     ICH
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53c807282f4d406c023da1753740e9a2 = L.marker(
+                [43.067756, -89.390388],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_53c807282f4d406c023da1753740e9a2.bindTooltip(
+                `<div>
+                     Doty St Apt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1e56bfae0e7562868d681f84007d887 = L.marker(
+                [43.079917, -89.3855],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_d1e56bfae0e7562868d681f84007d887.bindTooltip(
+                `<div>
+                     Butler St Apt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0d98f3788bec9db4e40803ca863f219 = L.marker(
+                [43.081157, -89.384089],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_f0d98f3788bec9db4e40803ca863f219.bindTooltip(
+                `<div>
+                     James Madison Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_500e160ac02117b194dfc0aa80026d8c = L.marker(
+                [42.993551, -91.122479],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_500e160ac02117b194dfc0aa80026d8c.bindTooltip(
+                `<div>
+                     Wyalusing State Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_007ecdebd56b358047b2d8da700c6726 = L.marker(
+                [46.576508, -86.350651],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_007ecdebd56b358047b2d8da700c6726.bindTooltip(
+                `<div>
+                     Pictured Rocks State Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81da78f558a55734a79b53984d54301d = L.marker(
+                [36.147907, -115.430991],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_81da78f558a55734a79b53984d54301d.bindTooltip(
+                `<div>
+                     Reh Roh Scrample
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5aa1ffdc892b6820a342222bc15cc941 = L.marker(
+                [34.162693, -118.127485],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_5aa1ffdc892b6820a342222bc15cc941.bindTooltip(
+                `<div>
+                     McDonald Park
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_511fae3abb71378fbe09beb2da365e87 = L.marker(
+                [12.572097, 101.448861],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_511fae3abb71378fbe09beb2da365e87.bindTooltip(
+                `<div>
+                     Prao Beach
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68db3d1f451fa5aa35abccdd8250e49c = L.marker(
+                [51.501861, -0.2265],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_68db3d1f451fa5aa35abccdd8250e49c.bindTooltip(
+                `<div>
+                     London
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d60c95e83a1bd2b047f8b213c6e2d90 = L.marker(
+                [51.501833, -0.230028],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_7d60c95e83a1bd2b047f8b213c6e2d90.bindTooltip(
+                `<div>
+                     Chicken Kitchen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cfba19c7970c126581227fe11774dfa3 = L.marker(
+                [55.944472, -3.162306],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_cfba19c7970c126581227fe11774dfa3.bindTooltip(
+                `<div>
+                     Arthur's Seat
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2e3cf8f395d7e31f41ca84f2189e1bb = L.marker(
+                [41.899056, -87.622472],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_a2e3cf8f395d7e31f41ca84f2189e1bb.bindTooltip(
+                `<div>
+                     John Hancock Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b122c15ed0492170f1b3e0252a8e26f6 = L.marker(
+                [42.1965, -88.450778],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_b122c15ed0492170f1b3e0252a8e26f6.bindTooltip(
+                `<div>
+                     Animal House Shelter
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11b233d213004ee0a770aa9123b68d5f = L.marker(
+                [18.816139, 98.892],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_11b233d213004ee0a770aa9123b68d5f.bindTooltip(
+                `<div>
+                     Doi Suthep
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26791c8ff3d1310944c16ddb1d94dd42 = L.marker(
+                [18.785278, 98.994472],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_26791c8ff3d1310944c16ddb1d94dd42.bindTooltip(
+                `<div>
+                     RAMMIN' LODGE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2eb3e6e2cee07df0bcb4e286cc265859 = L.marker(
+                [13.667944, 100.604722],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_2eb3e6e2cee07df0bcb4e286cc265859.bindTooltip(
+                `<div>
+                     BTS Bang Na
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57f88b14b4b91d9d728bf4f6df8e6066 = L.marker(
+                [34.111333, -118.192306],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_57f88b14b4b91d9d728bf4f6df8e6066.bindTooltip(
+                `<div>
+                     Highland Park Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_050d70b7057832007dbca5b143515407 = L.marker(
+                [37.188194, -113.000556],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_050d70b7057832007dbca5b143515407.bindTooltip(
+                `<div>
+                     Expensive af Zion grocery store
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec9763ebea78579d0e9d371a09beeff9 = L.marker(
+                [42.963194, -90.369222],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_ec9763ebea78579d0e9d371a09beeff9.bindTooltip(
+                `<div>
+                     That huge field of rural Wisconsin wind turbines
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b295dbeda04269f5ae4a910fbe33c81a = L.marker(
+                [43.083028, -89.35925],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_b295dbeda04269f5ae4a910fbe33c81a.bindTooltip(
+                `<div>
+                     Rutledge St Apt
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7356fb2980d6c55177b878ae41a0b5bb = L.marker(
+                [43.083028, -89.35925],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_7356fb2980d6c55177b878ae41a0b5bb.bindTooltip(
+                `<div>
+                     My house
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a97d01ab83f22c2e5530615bbed0aeb = L.marker(
+                [13.691417, 100.707083],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_0a97d01ab83f22c2e5530615bbed0aeb.bindTooltip(
+                `<div>
+                     Your house
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53c245673c70de33149e3dbbbd1a0c09 = L.marker(
+                [36.522583, 138.845111],
+                {}
+            ).addTo(map_ad8ba177195cb1cf8f925c0d569bbd2a);
+        
+    
+            marker_53c245673c70de33149e3dbbbd1a0c09.bindTooltip(
+                `<div>
+                     JAPAN (too many places to list)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
